@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -22,7 +23,18 @@ public class ExternalRequest {
     private int age;
 
     @Builder.Default
-    private List<String> infoList = new ArrayList<>();
+    private List<Info> infos = new ArrayList<>();
 
-    private LocalDate regDate;
+    private Date regDate;
+
+
+
+    @Getter
+    @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class Info{
+        private int weight;
+        private int height;
+    }
 }
