@@ -75,7 +75,9 @@ class ExternalAppServiceTest {
     @Test
     void JsonTOObject() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        ExternalRequest externalRequest = objectMapper.readValue(new File("C:\\workspace\\external\\src\\main\\resources\\static\\requert.json"),ExternalRequest.class);
+        ExternalRequest externalRequest = objectMapper.readValue(new File("/Users/lswteen/workspace/external/src/main/resources/static/requert.json"),ExternalRequest.class);
         System.out.println(externalRequest.toString());
     }
+
+
 }

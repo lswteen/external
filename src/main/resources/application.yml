@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: local
+
+  application:
+    name: external-service-api
+    description: "SpringBoot External Service Api"
+
+  jackson:
+    time-zone: "Asia/Seoul"
