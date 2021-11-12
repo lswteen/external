@@ -2,7 +2,6 @@ package com.renzo.external.web.service;
 
 import com.renzo.external.web.dto.DummyData;
 
-import com.renzo.external.web.dto.DummyDataList;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.ParameterizedTypeReference;
